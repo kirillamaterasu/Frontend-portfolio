@@ -7,20 +7,165 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>New site</title>
+  <title>Kargapolov Frontend Portfolio</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/vendor.css">
+  <link href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="site-container">
-    @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
-  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <button class="menu__btn">
+          <div class="menu__btn-line line-1"></div>
+          <div class="menu__btn-line line-2"></div>
+          <div class="menu__btn-line line-3"></div>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contacts</a>
+          </li>
+          <a class="menu__social" href="#"><img class="svg-color" src="img/linkedin.svg" alt=""></a>
+          <a class="menu__social" href="#"><img class="svg-color" src="img/git.svg" alt=""></a>
+          <a class="menu__social" href="#"><img class="svg-color" src="img/wa.svg" alt=""></a>
+          <a class="menu__social" href="#"><img class="svg-color" src="img/cv.svg" alt=""></a>
+        </ul>
+        <div class="header__title wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s">I'm <span>Kirill
+            Kargapolov.</span> <br> Front-end developer.</div>
+        <a class="header__btn" href="#projects">Projects</a>
+        <ul class="header__links">
+          <li><a class="header__link" href="#" target="_blank">
+              <img class="svg-color" src="img/linkedin.svg" alt="">
+            </a></li>
+          <li><a class="header__link" href="https://github.com/kirillamaterasu?tab=repositories" target="_blank">
+              <img class="svg-color" src="img/git.svg" alt="">
+            </a></li>
+          <li><a class="header__link" href="https://wa.me/+79292639522" target="_blank">
+              <img class="svg-color" src="img/wa.svg" alt="">
+            </a></li>
+          <li><a class="header__link" href="#" target="_blank">
+              <img class="svg-color" src="img/cv.svg" alt="">
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="projects">
+    <div class="container">
+      <h1 class="project__top-title">Projects</h1>
+      <div class="projects__inner id=" #projects">
+        <div class="project__box">
+          <div class="project__content">
+            <h2 class="project__title">E-commerce store 'DRIVE MOTO'</h2>
+            <div class="project__icons">
+              <img class="project__icon" src="img/html-icon.svg" alt="">
+              <img class="project__icon" src="img/sass.svg" alt="">
+              <img class="project__icon" src="img/js.svg" alt="">
+              <img class="project__icon" src="img/gulp.svg" alt="">
+              <img class="project__icon" src="img/npm.svg" alt="">
+            </div>
+            <p class="project__subtitle">Complex Russian version of a responsive front-end part of a multipage page
+              e-commerce site with main
+              page, catalog, product card, different aside filters, filters, price range sliders, star ratings, sliders.
+            </p>
+            <a class="project__site" href="#"><img src="img/project-site.svg" alt=""></a>
+            <a class="project__git" href="#"><img src="img/git.svg" alt=""></a>
+          </div>
+          <div class="project__slider">
+            <a class="" href=""><img src="img/store-1.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-2.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-3.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-4.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-5.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-6.jpg" alt=""></a>
+            <a class="" href=""><img src="img/store-7.jpg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="project__box">
+          <div class="project__content">
+            <h2 class="project__title">Surfing Landing Page 'Go Surf'</h2>
+            <div class="project__icons">
+              <img class="project__icon" src="img/html-icon.svg" alt="">
+              <img class="project__icon" src="img/sass.svg" alt="">
+              <img class="project__icon" src="img/js.svg" alt="">
+              <img class="project__icon" src="img/gulp.svg" alt="">
+              <img class="project__icon" src="img/npm.svg" alt="">
+            </div>
+            <p class="project__subtitle">Complex responsive landing page with surfing spots to stay with a custom slider, price calculator, animations, map points connected to the slider.
+            </p>
+            <a class="project__site" href="#"><img src="img/project-site.svg" alt=""></a>
+            <a class="project__git" href="#"><img src="img/git.svg" alt=""></a>
+          </div>
+          <div class="project__slider">
+            <a class="" href=""><img src="img/surf-1.jpg" alt=""></a>
+            <a class="" href=""><img src="img/surf-2.jpg" alt=""></a>
+            <a class="" href=""><img src="img/surf-3.jpg" alt=""></a>
+            <a class="" href=""><img src="img/surf-4.jpg" alt=""></a>
+            <a class="" href=""><img src="img/surf-5.jpg" alt=""></a>
+            <a class="" href=""><img src="img/surf-6.jpg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="project__box">
+          <div class="project__content">
+            <h2 class="project__title">Drone landing page 'Mavic 2 PRO'</h2>
+            <div class="project__icons">
+              <img class="project__icon" src="img/html-icon.svg" alt="">
+              <img class="project__icon" src="img/sass.svg" alt="">
+              <img class="project__icon" src="img/js.svg" alt="">
+              <img class="project__icon" src="img/gulp.svg" alt="">
+              <img class="project__icon" src="img/npm.svg" alt="">
+            </div>
+            <p class="project__subtitle">Simple drone landing page with with a full screen scroll design with a carousel and animations.
+            </p>
+            <a class="project__site" href="#"><img src="img/project-site.svg" alt=""></a>
+            <a class="project__git" href="#"><img src="img/git.svg" alt=""></a>
+          </div>
+          <div class="project__slider">
+            <a class="" href=""><img src="img/mavic-1.jpg" alt=""></a>
+            <a class="" href=""><img src="img/mavic-2.jpg" alt=""></a>
+            <a class="" href=""><img src="img/mavic-3.jpg" alt=""></a>
+            <a class="" href=""><img src="img/mavic-4.jpg" alt=""></a>
+            <a class="" href=""><img src="img/mavic-5.jpg" alt=""></a>
+            <a class="" href=""><img src="img/mavic-6.jpg" alt=""></a>
+          </div>
+        </div>
+        </div>
+        <div class="project__box">
+          <div class="project__title">Car renting service</div>
+          <div class="project__subtitle">simple landing page using react and tailwind</div>
+          <div class="project__slider"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
   <script src="js/vendor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

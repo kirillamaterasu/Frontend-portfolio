@@ -5,9 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
-		"dev": "gulp",
-		"build": "gulp build",
-		"cache": "gulp cache",
+    "dev": "gulp",
+    "build": "gulp build",
+    "cache": "gulp cache",
     "backend": "gulp backend",
     "code": "editorconfig-checker"
   },
@@ -43,5 +43,8 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "wowjs": "^1.1.3"
   }
 }
