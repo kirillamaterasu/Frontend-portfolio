@@ -1,0 +1,15 @@
+@media (max-width: 950px) {
+    .project__box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 666px) {
+    .project__box{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .menu__list{
+        width: 350px;
+    }
+}
